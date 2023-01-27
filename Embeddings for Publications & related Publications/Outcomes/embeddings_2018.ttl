@@ -1,0 +1,803 @@
+@prefix ns1: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:concept0 a ns1:Concept ;
+    ns1:distance_2018 "0.0"^^xsd:float ;
+    ns1:title_2018 "Cancer therapy" ;
+    ns1:worksCount_2018 2178 ;
+    ns1:x_2018 "0.0"^^xsd:float ;
+    ns1:y_2018 "0.0"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept1 a ns1:Concept ;
+    ns1:distance_2018 "0.14564919471740723"^^xsd:float ;
+    ns1:title_2018 "Ovarian cancer" ;
+    ns1:worksCount_2018 27 ;
+    ns1:x_2018 "-0.020687252283096313"^^xsd:float ;
+    ns1:y_2018 "-0.12496194243431091"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept10 a ns1:Concept ;
+    ns1:distance_2018 "0.992991715669632"^^xsd:float ;
+    ns1:title_2018 "Dendrimer" ;
+    ns1:worksCount_2018 36 ;
+    ns1:x_2018 "-0.2079351246356964"^^xsd:float ;
+    ns1:y_2018 "0.7850565910339355"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept11 a ns1:Concept ;
+    ns1:distance_2018 "1.0149631649255753"^^xsd:float ;
+    ns1:title_2018 "Radiation oncology" ;
+    ns1:worksCount_2018 11 ;
+    ns1:x_2018 "0.3154991567134857"^^xsd:float ;
+    ns1:y_2018 "-0.6994640082120895"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept12 a ns1:Concept ;
+    ns1:distance_2018 "1.0635241568088531"^^xsd:float ;
+    ns1:title_2018 "Silver nanoparticle" ;
+    ns1:worksCount_2018 8 ;
+    ns1:x_2018 "0.901092141866684"^^xsd:float ;
+    ns1:y_2018 "0.1624320149421692"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept13 a ns1:Concept ;
+    ns1:distance_2018 "1.1908938735723495"^^xsd:float ;
+    ns1:title_2018 "DNA" ;
+    ns1:worksCount_2018 65 ;
+    ns1:x_2018 "-0.45713451504707336"^^xsd:float ;
+    ns1:y_2018 "-0.7337593585252762"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept14 a ns1:Concept ;
+    ns1:distance_2018 "1.2394389510154724"^^xsd:float ;
+    ns1:title_2018 "Chromatography" ;
+    ns1:worksCount_2018 19 ;
+    ns1:x_2018 "1.0912820994853973"^^xsd:float ;
+    ns1:y_2018 "-0.14815685153007507"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept15 a ns1:Concept ;
+    ns1:distance_2018 "1.2628522217273712"^^xsd:float ;
+    ns1:title_2018 "Stem cell" ;
+    ns1:worksCount_2018 32 ;
+    ns1:x_2018 "-1.1321235597133636"^^xsd:float ;
+    ns1:y_2018 "-0.13072866201400757"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept16 a ns1:Concept ;
+    ns1:distance_2018 "1.30205237865448"^^xsd:float ;
+    ns1:title_2018 "Combinatorial chemistry" ;
+    ns1:worksCount_2018 75 ;
+    ns1:x_2018 "0.08479511737823486"^^xsd:float ;
+    ns1:y_2018 "1.2172572612762451"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept17 a ns1:Concept ;
+    ns1:distance_2018 "1.306152731180191"^^xsd:float ;
+    ns1:title_2018 "Chemotherapy" ;
+    ns1:worksCount_2018 184 ;
+    ns1:x_2018 "1.1184304654598236"^^xsd:float ;
+    ns1:y_2018 "0.18772226572036743"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept18 a ns1:Concept ;
+    ns1:distance_2018 "1.3449163436889648"^^xsd:float ;
+    ns1:title_2018 "Apoptosis" ;
+    ns1:worksCount_2018 100 ;
+    ns1:x_2018 "0.24537664651870728"^^xsd:float ;
+    ns1:y_2018 "-1.0995396971702576"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept19 a ns1:Concept ;
+    ns1:distance_2018 "1.432780534029007"^^xsd:float ;
+    ns1:title_2018 "Evolutionary biology" ;
+    ns1:worksCount_2018 9 ;
+    ns1:x_2018 "0.7472273409366608"^^xsd:float ;
+    ns1:y_2018 "0.6855531930923462"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept2 a ns1:Concept ;
+    ns1:distance_2018 "0.2719094455242157"^^xsd:float ;
+    ns1:title_2018 "Immunotherapy" ;
+    ns1:worksCount_2018 234 ;
+    ns1:x_2018 "0.09889575839042664"^^xsd:float ;
+    ns1:y_2018 "0.17301368713378906"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept20 a ns1:Concept ;
+    ns1:distance_2018 "1.439557820558548"^^xsd:float ;
+    ns1:title_2018 "Enzyme" ;
+    ns1:worksCount_2018 74 ;
+    ns1:x_2018 "-0.7255100309848785"^^xsd:float ;
+    ns1:y_2018 "0.7140477895736694"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept21 a ns1:Concept ;
+    ns1:distance_2018 "1.521678239107132"^^xsd:float ;
+    ns1:title_2018 "Dermatology" ;
+    ns1:worksCount_2018 15 ;
+    ns1:x_2018 "1.1547009646892548"^^xsd:float ;
+    ns1:y_2018 "0.3669772744178772"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept22 a ns1:Concept ;
+    ns1:distance_2018 "1.5534380376338959"^^xsd:float ;
+    ns1:title_2018 "Simple (philosophy)" ;
+    ns1:worksCount_2018 2 ;
+    ns1:x_2018 "0.24378857016563416"^^xsd:float ;
+    ns1:y_2018 "1.3096494674682617"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept23 a ns1:Concept ;
+    ns1:distance_2018 "1.6874357163906097"^^xsd:float ;
+    ns1:title_2018 "Sensitization" ;
+    ns1:worksCount_2018 5 ;
+    ns1:x_2018 "0.09903320670127869"^^xsd:float ;
+    ns1:y_2018 "-1.588402509689331"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept24 a ns1:Concept ;
+    ns1:distance_2018 "1.7346583306789398"^^xsd:float ;
+    ns1:title_2018 "Economics" ;
+    ns1:worksCount_2018 91 ;
+    ns1:x_2018 "1.0778068006038666"^^xsd:float ;
+    ns1:y_2018 "0.6568515300750732"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept25 a ns1:Concept ;
+    ns1:distance_2018 "1.826041579246521"^^xsd:float ;
+    ns1:title_2018 "Risk analysis (engineering)" ;
+    ns1:worksCount_2018 21 ;
+    ns1:x_2018 "0.21866834163665771"^^xsd:float ;
+    ns1:y_2018 "-1.6073732376098633"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept26 a ns1:Concept ;
+    ns1:distance_2018 "1.923847883939743"^^xsd:float ;
+    ns1:title_2018 "Cancer research" ;
+    ns1:worksCount_2018 958 ;
+    ns1:x_2018 "-0.8320597112178802"^^xsd:float ;
+    ns1:y_2018 "1.0917881727218628"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept27 a ns1:Concept ;
+    ns1:distance_2018 "1.9540799707174301"^^xsd:float ;
+    ns1:title_2018 "Antioxidant" ;
+    ns1:worksCount_2018 18 ;
+    ns1:x_2018 "1.211631864309311"^^xsd:float ;
+    ns1:y_2018 "-0.7424481064081192"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept28 a ns1:Concept ;
+    ns1:distance_2018 "2.0399175584316254"^^xsd:float ;
+    ns1:title_2018 "Radiology" ;
+    ns1:worksCount_2018 99 ;
+    ns1:x_2018 "0.6587179601192474"^^xsd:float ;
+    ns1:y_2018 "1.381199598312378"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept29 a ns1:Concept ;
+    ns1:distance_2018 "2.2515930831432343"^^xsd:float ;
+    ns1:title_2018 "Ecology" ;
+    ns1:worksCount_2018 34 ;
+    ns1:x_2018 "2.205145686864853"^^xsd:float ;
+    ns1:y_2018 "-0.04644739627838135"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept3 a ns1:Concept ;
+    ns1:distance_2018 "0.5944591462612152"^^xsd:float ;
+    ns1:title_2018 "Autophagy" ;
+    ns1:worksCount_2018 35 ;
+    ns1:x_2018 "0.43083593249320984"^^xsd:float ;
+    ns1:y_2018 "0.16362321376800537"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept30 a ns1:Concept ;
+    ns1:distance_2018 "2.278733044862747"^^xsd:float ;
+    ns1:title_2018 "Engineering" ;
+    ns1:worksCount_2018 234 ;
+    ns1:x_2018 "-2.2331670820713043"^^xsd:float ;
+    ns1:y_2018 "0.04556596279144287"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept31 a ns1:Concept ;
+    ns1:distance_2018 "2.379504054784775"^^xsd:float ;
+    ns1:title_2018 "Biotechnology" ;
+    ns1:worksCount_2018 148 ;
+    ns1:x_2018 "1.3454146087169647"^^xsd:float ;
+    ns1:y_2018 "1.03408944606781"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept32 a ns1:Concept ;
+    ns1:distance_2018 "2.4020446836948395"^^xsd:float ;
+    ns1:title_2018 "Photothermal therapy" ;
+    ns1:worksCount_2018 263 ;
+    ns1:x_2018 "-2.2097560465335846"^^xsd:float ;
+    ns1:y_2018 "-0.19228863716125488"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept33 a ns1:Concept ;
+    ns1:distance_2018 "2.420897275209427"^^xsd:float ;
+    ns1:title_2018 "Breast cancer" ;
+    ns1:worksCount_2018 161 ;
+    ns1:x_2018 "1.1032266318798065"^^xsd:float ;
+    ns1:y_2018 "-1.3176706433296204"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept34 a ns1:Concept ;
+    ns1:distance_2018 "2.430928558111191"^^xsd:float ;
+    ns1:title_2018 "Geriatric oncology" ;
+    ns1:worksCount_2018 2 ;
+    ns1:x_2018 "1.9105060994625092"^^xsd:float ;
+    ns1:y_2018 "0.5204224586486816"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept35 a ns1:Concept ;
+    ns1:distance_2018 "2.457372635602951"^^xsd:float ;
+    ns1:title_2018 "Oncolytic virus" ;
+    ns1:worksCount_2018 39 ;
+    ns1:x_2018 "-0.8602815568447113"^^xsd:float ;
+    ns1:y_2018 "-1.5970910787582397"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept36 a ns1:Concept ;
+    ns1:distance_2018 "2.6180352866649628"^^xsd:float ;
+    ns1:title_2018 "Pharmacology" ;
+    ns1:worksCount_2018 658 ;
+    ns1:x_2018 "1.0241124331951141"^^xsd:float ;
+    ns1:y_2018 "1.5939228534698486"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept37 a ns1:Concept ;
+    ns1:distance_2018 "2.6501398980617523"^^xsd:float ;
+    ns1:title_2018 "Catalysis" ;
+    ns1:worksCount_2018 110 ;
+    ns1:x_2018 "1.1551166474819183"^^xsd:float ;
+    ns1:y_2018 "1.495023250579834"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept38 a ns1:Concept ;
+    ns1:distance_2018 "2.657234877347946"^^xsd:float ;
+    ns1:title_2018 "Fluorescence-lifetime imaging microscopy" ;
+    ns1:worksCount_2018 29 ;
+    ns1:x_2018 "2.4771884381771088"^^xsd:float ;
+    ns1:y_2018 "-0.1800464391708374"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept39 a ns1:Concept ;
+    ns1:distance_2018 "2.675247758626938"^^xsd:float ;
+    ns1:title_2018 "Operations research" ;
+    ns1:worksCount_2018 10 ;
+    ns1:x_2018 "2.4457267224788666"^^xsd:float ;
+    ns1:y_2018 "0.2295210361480713"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept4 a ns1:Concept ;
+    ns1:distance_2018 "0.6636988446116447"^^xsd:float ;
+    ns1:title_2018 "Erlotinib" ;
+    ns1:worksCount_2018 6 ;
+    ns1:x_2018 "0.015000194311141968"^^xsd:float ;
+    ns1:y_2018 "-0.6486986503005028"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept40 a ns1:Concept ;
+    ns1:distance_2018 "2.675247758626938"^^xsd:float ;
+    ns1:title_2018 "Penetration (warfare)" ;
+    ns1:worksCount_2018 10 ;
+    ns1:x_2018 "2.4457267224788666"^^xsd:float ;
+    ns1:y_2018 "0.2295210361480713"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept41 a ns1:Concept ;
+    ns1:distance_2018 "2.6807850301265717"^^xsd:float ;
+    ns1:title_2018 "Biomarker" ;
+    ns1:worksCount_2018 33 ;
+    ns1:x_2018 "1.2785583436489105"^^xsd:float ;
+    ns1:y_2018 "1.4022266864776611"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept42 a ns1:Concept ;
+    ns1:distance_2018 "2.725931793451309"^^xsd:float ;
+    ns1:title_2018 "Head and neck cancer" ;
+    ns1:worksCount_2018 18 ;
+    ns1:x_2018 "-1.162133127450943"^^xsd:float ;
+    ns1:y_2018 "1.5637986660003662"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept43 a ns1:Concept ;
+    ns1:distance_2018 "2.74510058760643"^^xsd:float ;
+    ns1:title_2018 "Chemical engineering" ;
+    ns1:worksCount_2018 81 ;
+    ns1:x_2018 "0.622877687215805"^^xsd:float ;
+    ns1:y_2018 "2.122222900390625"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept44 a ns1:Concept ;
+    ns1:distance_2018 "2.7694980800151825"^^xsd:float ;
+    ns1:title_2018 "Infectious disease (medical specialty)" ;
+    ns1:worksCount_2018 9 ;
+    ns1:x_2018 "1.265531748533249"^^xsd:float ;
+    ns1:y_2018 "1.5039663314819336"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept45 a ns1:Concept ;
+    ns1:distance_2018 "2.820866197347641"^^xsd:float ;
+    ns1:title_2018 "In vitro" ;
+    ns1:worksCount_2018 129 ;
+    ns1:x_2018 "0.696389764547348"^^xsd:float ;
+    ns1:y_2018 "2.124476432800293"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept46 a ns1:Concept ;
+    ns1:distance_2018 "2.863525003194809"^^xsd:float ;
+    ns1:title_2018 "Clinical trial" ;
+    ns1:worksCount_2018 77 ;
+    ns1:x_2018 "0.8314767777919769"^^xsd:float ;
+    ns1:y_2018 "2.032048225402832"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept47 a ns1:Concept ;
+    ns1:distance_2018 "2.951628237962723"^^xsd:float ;
+    ns1:title_2018 "Supramolecular chemistry" ;
+    ns1:worksCount_2018 7 ;
+    ns1:x_2018 "0.4089188873767853"^^xsd:float ;
+    ns1:y_2018 "2.5427093505859375"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept48 a ns1:Concept ;
+    ns1:distance_2018 "2.95815709233284"^^xsd:float ;
+    ns1:title_2018 "Antibody" ;
+    ns1:worksCount_2018 65 ;
+    ns1:x_2018 "-2.296837955713272"^^xsd:float ;
+    ns1:y_2018 "0.6613191366195679"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept49 a ns1:Concept ;
+    ns1:distance_2018 "2.980360835790634"^^xsd:float ;
+    ns1:title_2018 "Cyanine" ;
+    ns1:worksCount_2018 3 ;
+    ns1:x_2018 "0.19925865530967712"^^xsd:float ;
+    ns1:y_2018 "2.781102180480957"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept5 a ns1:Concept ;
+    ns1:distance_2018 "0.6928400844335556"^^xsd:float ;
+    ns1:title_2018 "Tolerability" ;
+    ns1:worksCount_2018 7 ;
+    ns1:x_2018 "-0.3981975167989731"^^xsd:float ;
+    ns1:y_2018 "0.2946425676345825"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept50 a ns1:Concept ;
+    ns1:distance_2018 "2.9888880997896194"^^xsd:float ;
+    ns1:title_2018 "Cancer treatment" ;
+    ns1:worksCount_2018 332 ;
+    ns1:x_2018 "-2.2241245806217194"^^xsd:float ;
+    ns1:y_2018 "-0.7647635191679001"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept51 a ns1:Concept ;
+    ns1:distance_2018 "3.0119132101535797"^^xsd:float ;
+    ns1:title_2018 "Hematology" ;
+    ns1:worksCount_2018 4 ;
+    ns1:x_2018 "-1.7322500050067902"^^xsd:float ;
+    ns1:y_2018 "1.2796632051467896"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept52 a ns1:Concept ;
+    ns1:distance_2018 "3.0253040865063667"^^xsd:float ;
+    ns1:title_2018 "Colloidal gold" ;
+    ns1:worksCount_2018 69 ;
+    ns1:x_2018 "-0.25214124470949173"^^xsd:float ;
+    ns1:y_2018 "2.773162841796875"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept53 a ns1:Concept ;
+    ns1:distance_2018 "3.101221412420273"^^xsd:float ;
+    ns1:title_2018 "G-quadruplex" ;
+    ns1:worksCount_2018 2 ;
+    ns1:x_2018 "2.078208774328232"^^xsd:float ;
+    ns1:y_2018 "-1.023012638092041"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept54 a ns1:Concept ;
+    ns1:distance_2018 "3.127535730600357"^^xsd:float ;
+    ns1:title_2018 "Quality of life (healthcare)" ;
+    ns1:worksCount_2018 30 ;
+    ns1:x_2018 "3.0863986909389496"^^xsd:float ;
+    ns1:y_2018 "0.04113703966140747"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept55 a ns1:Concept ;
+    ns1:distance_2018 "3.1569392383098602"^^xsd:float ;
+    ns1:title_2018 "Medical physics" ;
+    ns1:worksCount_2018 144 ;
+    ns1:x_2018 "2.3158276975154877"^^xsd:float ;
+    ns1:y_2018 "0.8411115407943726"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept56 a ns1:Concept ;
+    ns1:distance_2018 "3.157802551984787"^^xsd:float ;
+    ns1:title_2018 "Prodrug" ;
+    ns1:worksCount_2018 19 ;
+    ns1:x_2018 "0.7024700343608856"^^xsd:float ;
+    ns1:y_2018 "2.4553325176239014"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept57 a ns1:Concept ;
+    ns1:distance_2018 "3.189825028181076"^^xsd:float ;
+    ns1:title_2018 "Exonuclease" ;
+    ns1:worksCount_2018 1 ;
+    ns1:x_2018 "-0.3287300765514374"^^xsd:float ;
+    ns1:y_2018 "-2.8610949516296387"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept58 a ns1:Concept ;
+    ns1:distance_2018 "3.189825028181076"^^xsd:float ;
+    ns1:title_2018 "Master regulator" ;
+    ns1:worksCount_2018 1 ;
+    ns1:x_2018 "-0.3287300765514374"^^xsd:float ;
+    ns1:y_2018 "-2.8610949516296387"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept59 a ns1:Concept ;
+    ns1:distance_2018 "3.189825028181076"^^xsd:float ;
+    ns1:title_2018 "RNase P" ;
+    ns1:worksCount_2018 1 ;
+    ns1:x_2018 "-0.3287300765514374"^^xsd:float ;
+    ns1:y_2018 "-2.8610949516296387"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept6 a ns1:Concept ;
+    ns1:distance_2018 "0.7003546059131622"^^xsd:float ;
+    ns1:title_2018 "Drug repositioning" ;
+    ns1:worksCount_2018 11 ;
+    ns1:x_2018 "-0.6912349760532379"^^xsd:float ;
+    ns1:y_2018 "0.009119629859924316"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept60 a ns1:Concept ;
+    ns1:distance_2018 "3.228594332933426"^^xsd:float ;
+    ns1:title_2018 "Radiation therapy" ;
+    ns1:worksCount_2018 231 ;
+    ns1:x_2018 "-1.7724137604236603"^^xsd:float ;
+    ns1:y_2018 "-1.4561805725097656"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept61 a ns1:Concept ;
+    ns1:distance_2018 "3.24729523062706"^^xsd:float ;
+    ns1:title_2018 "Prostate" ;
+    ns1:worksCount_2018 11 ;
+    ns1:x_2018 "2.267350286245346"^^xsd:float ;
+    ns1:y_2018 "0.9799449443817139"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept62 a ns1:Concept ;
+    ns1:distance_2018 "3.2780844271183014"^^xsd:float ;
+    ns1:title_2018 "Intracellular" ;
+    ns1:worksCount_2018 32 ;
+    ns1:x_2018 "-1.312284141778946"^^xsd:float ;
+    ns1:y_2018 "1.9658002853393555"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept63 a ns1:Concept ;
+    ns1:distance_2018 "3.2816096246242523"^^xsd:float ;
+    ns1:title_2018 "Intensive care medicine" ;
+    ns1:worksCount_2018 253 ;
+    ns1:x_2018 "1.6048355996608734"^^xsd:float ;
+    ns1:y_2018 "-1.676774024963379"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept64 a ns1:Concept ;
+    ns1:distance_2018 "3.306943118572235"^^xsd:float ;
+    ns1:title_2018 "Biomedical engineering" ;
+    ns1:worksCount_2018 132 ;
+    ns1:x_2018 "-0.48657649755477905"^^xsd:float ;
+    ns1:y_2018 "2.820366621017456"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept65 a ns1:Concept ;
+    ns1:distance_2018 "3.3260968029499054"^^xsd:float ;
+    ns1:title_2018 "Neuroscience" ;
+    ns1:worksCount_2018 35 ;
+    ns1:x_2018 "-1.7484789192676544"^^xsd:float ;
+    ns1:y_2018 "-1.577617883682251"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept66 a ns1:Concept ;
+    ns1:distance_2018 "3.3462537825107574"^^xsd:float ;
+    ns1:title_2018 "Biophysics" ;
+    ns1:worksCount_2018 127 ;
+    ns1:x_2018 "0.06474533677101135"^^xsd:float ;
+    ns1:y_2018 "3.281508445739746"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept67 a ns1:Concept ;
+    ns1:distance_2018 "3.3614988029003143"^^xsd:float ;
+    ns1:title_2018 "Anticancer drug" ;
+    ns1:worksCount_2018 30 ;
+    ns1:x_2018 "1.197429746389389"^^xsd:float ;
+    ns1:y_2018 "-2.1640690565109253"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept68 a ns1:Concept ;
+    ns1:distance_2018 "3.3712652027606964"^^xsd:float ;
+    ns1:title_2018 "Conjugate" ;
+    ns1:worksCount_2018 32 ;
+    ns1:x_2018 "-2.7902797758579254"^^xsd:float ;
+    ns1:y_2018 "0.580985426902771"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept69 a ns1:Concept ;
+    ns1:distance_2018 "3.43526092171669"^^xsd:float ;
+    ns1:title_2018 "Alternative medicine" ;
+    ns1:worksCount_2018 44 ;
+    ns1:x_2018 "-1.7295030653476715"^^xsd:float ;
+    ns1:y_2018 "1.7057578563690186"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept7 a ns1:Concept ;
+    ns1:distance_2018 "0.7957550585269928"^^xsd:float ;
+    ns1:title_2018 "Distress" ;
+    ns1:worksCount_2018 4 ;
+    ns1:x_2018 "-0.7442494928836823"^^xsd:float ;
+    ns1:y_2018 "0.05150556564331055"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept70 a ns1:Concept ;
+    ns1:distance_2018 "3.4493115842342377"^^xsd:float ;
+    ns1:title_2018 "In vivo" ;
+    ns1:worksCount_2018 157 ;
+    ns1:x_2018 "1.9783397614955902"^^xsd:float ;
+    ns1:y_2018 "1.4709718227386475"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept71 a ns1:Concept ;
+    ns1:distance_2018 "3.450802117586136"^^xsd:float ;
+    ns1:title_2018 "Photodynamic therapy" ;
+    ns1:worksCount_2018 250 ;
+    ns1:x_2018 "-1.461826115846634"^^xsd:float ;
+    ns1:y_2018 "1.988976001739502"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept72 a ns1:Concept ;
+    ns1:distance_2018 "3.454323559999466"^^xsd:float ;
+    ns1:title_2018 "Macromolecule" ;
+    ns1:worksCount_2018 1 ;
+    ns1:x_2018 "-1.4444176256656647"^^xsd:float ;
+    ns1:y_2018 "-2.0099059343338013"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept73 a ns1:Concept ;
+    ns1:distance_2018 "3.4840932190418243"^^xsd:float ;
+    ns1:title_2018 "Mathematical analysis" ;
+    ns1:worksCount_2018 43 ;
+    ns1:x_2018 "0.6499259769916534"^^xsd:float ;
+    ns1:y_2018 "2.834167242050171"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept74 a ns1:Concept ;
+    ns1:distance_2018 "3.4895013868808746"^^xsd:float ;
+    ns1:title_2018 "Plasmon" ;
+    ns1:worksCount_2018 3 ;
+    ns1:x_2018 "-2.9126953184604645"^^xsd:float ;
+    ns1:y_2018 "0.5768060684204102"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept75 a ns1:Concept ;
+    ns1:distance_2018 "3.5090978741645813"^^xsd:float ;
+    ns1:title_2018 "STAT3" ;
+    ns1:worksCount_2018 1 ;
+    ns1:x_2018 "0.1926906704902649"^^xsd:float ;
+    ns1:y_2018 "-3.3164072036743164"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept76 a ns1:Concept ;
+    ns1:distance_2018 "3.528440445661545"^^xsd:float ;
+    ns1:title_2018 "Surgery" ;
+    ns1:worksCount_2018 109 ;
+    ns1:x_2018 "2.2503460347652435"^^xsd:float ;
+    ns1:y_2018 "-1.2780944108963013"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept77 a ns1:Concept ;
+    ns1:distance_2018 "3.538468509912491"^^xsd:float ;
+    ns1:title_2018 "Metformin" ;
+    ns1:worksCount_2018 4 ;
+    ns1:x_2018 "-2.434652477502823"^^xsd:float ;
+    ns1:y_2018 "1.103816032409668"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept78 a ns1:Concept ;
+    ns1:distance_2018 "3.5473022162914276"^^xsd:float ;
+    ns1:title_2018 "Drug" ;
+    ns1:worksCount_2018 457 ;
+    ns1:x_2018 "1.7079977691173553"^^xsd:float ;
+    ns1:y_2018 "1.8393044471740723"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept79 a ns1:Concept ;
+    ns1:distance_2018 "3.581011541187763"^^xsd:float ;
+    ns1:title_2018 "Mechanism (biology)" ;
+    ns1:worksCount_2018 27 ;
+    ns1:x_2018 "-0.15105701237916946"^^xsd:float ;
+    ns1:y_2018 "3.4299545288085938"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept8 a ns1:Concept ;
+    ns1:distance_2018 "0.9208294451236725"^^xsd:float ;
+    ns1:title_2018 "Cancer stem cell" ;
+    ns1:worksCount_2018 85 ;
+    ns1:x_2018 "0.4727989733219147"^^xsd:float ;
+    ns1:y_2018 "0.4480304718017578"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept80 a ns1:Concept ;
+    ns1:distance_2018 "3.5845700800418854"^^xsd:float ;
+    ns1:title_2018 "Blockade" ;
+    ns1:worksCount_2018 30 ;
+    ns1:x_2018 "-1.6050086319446564"^^xsd:float ;
+    ns1:y_2018 "-1.979561448097229"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept81 a ns1:Concept ;
+    ns1:distance_2018 "3.585601657629013"^^xsd:float ;
+    ns1:title_2018 "Genome" ;
+    ns1:worksCount_2018 7 ;
+    ns1:x_2018 "-2.1194103062152863"^^xsd:float ;
+    ns1:y_2018 "-1.4661913514137268"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept82 a ns1:Concept ;
+    ns1:distance_2018 "3.6144441068172455"^^xsd:float ;
+    ns1:title_2018 "Glutamate carboxypeptidase II" ;
+    ns1:worksCount_2018 2 ;
+    ns1:x_2018 "0.31705936789512634"^^xsd:float ;
+    ns1:y_2018 "3.297384738922119"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept83 a ns1:Concept ;
+    ns1:distance_2018 "3.619854658842087"^^xsd:float ;
+    ns1:title_2018 "DNA repair" ;
+    ns1:worksCount_2018 11 ;
+    ns1:x_2018 "2.8859616219997406"^^xsd:float ;
+    ns1:y_2018 "0.7338930368423462"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept84 a ns1:Concept ;
+    ns1:distance_2018 "3.667445808649063"^^xsd:float ;
+    ns1:title_2018 "Nuclear medicine" ;
+    ns1:worksCount_2018 63 ;
+    ns1:x_2018 "-1.4015804827213287"^^xsd:float ;
+    ns1:y_2018 "-2.2658653259277344"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept85 a ns1:Concept ;
+    ns1:distance_2018 "3.676193207502365"^^xsd:float ;
+    ns1:title_2018 "Ultrasound" ;
+    ns1:worksCount_2018 15 ;
+    ns1:x_2018 "0.904673308134079"^^xsd:float ;
+    ns1:y_2018 "-2.771519899368286"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept86 a ns1:Concept ;
+    ns1:distance_2018 "3.7322377040982246"^^xsd:float ;
+    ns1:title_2018 "Radiochemistry" ;
+    ns1:worksCount_2018 17 ;
+    ns1:x_2018 "-0.16737736016511917"^^xsd:float ;
+    ns1:y_2018 "3.5648603439331055"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept87 a ns1:Concept ;
+    ns1:distance_2018 "3.738010734319687"^^xsd:float ;
+    ns1:title_2018 "Human disease" ;
+    ns1:worksCount_2018 3 ;
+    ns1:x_2018 "0.9688986241817474"^^xsd:float ;
+    ns1:y_2018 "2.7691121101379395"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept88 a ns1:Concept ;
+    ns1:distance_2018 "3.738010734319687"^^xsd:float ;
+    ns1:title_2018 "Humanized mouse" ;
+    ns1:worksCount_2018 3 ;
+    ns1:x_2018 "0.9688986241817474"^^xsd:float ;
+    ns1:y_2018 "2.7691121101379395"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept89 a ns1:Concept ;
+    ns1:distance_2018 "3.740063101053238"^^xsd:float ;
+    ns1:title_2018 "Hypoxia (environmental)" ;
+    ns1:worksCount_2018 13 ;
+    ns1:x_2018 "-1.1736156046390533"^^xsd:float ;
+    ns1:y_2018 "-2.5664474964141846"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept9 a ns1:Concept ;
+    ns1:distance_2018 "0.9849262535572052"^^xsd:float ;
+    ns1:title_2018 "Perspective (graphical)" ;
+    ns1:worksCount_2018 10 ;
+    ns1:x_2018 "-0.7920649945735931"^^xsd:float ;
+    ns1:y_2018 "0.19286125898361206"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept90 a ns1:Concept ;
+    ns1:distance_2018 "3.751107782125473"^^xsd:float ;
+    ns1:title_2018 "Medical education" ;
+    ns1:worksCount_2018 68 ;
+    ns1:x_2018 "2.473083585500717"^^xsd:float ;
+    ns1:y_2018 "1.2780241966247559"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept91 a ns1:Concept ;
+    ns1:distance_2018 "3.786399096250534"^^xsd:float ;
+    ns1:title_2018 "Paclitaxel" ;
+    ns1:worksCount_2018 18 ;
+    ns1:x_2018 "-2.7207662165164948"^^xsd:float ;
+    ns1:y_2018 "-1.0656328797340393"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept92 a ns1:Concept ;
+    ns1:distance_2018 "3.836158186197281"^^xsd:float ;
+    ns1:title_2018 "Biochemistry" ;
+    ns1:worksCount_2018 677 ;
+    ns1:x_2018 "-1.375695139169693"^^xsd:float ;
+    ns1:y_2018 "2.460463047027588"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept93 a ns1:Concept ;
+    ns1:distance_2018 "3.838303714990616"^^xsd:float ;
+    ns1:title_2018 "Lactone" ;
+    ns1:worksCount_2018 1 ;
+    ns1:x_2018 "-0.9741305410861969"^^xsd:float ;
+    ns1:y_2018 "2.864173173904419"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept94 a ns1:Concept ;
+    ns1:distance_2018 "3.8553763329982758"^^xsd:float ;
+    ns1:title_2018 "Virotherapy" ;
+    ns1:worksCount_2018 22 ;
+    ns1:x_2018 "-1.0560060441493988"^^xsd:float ;
+    ns1:y_2018 "-2.799370288848877"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept95 a ns1:Concept ;
+    ns1:distance_2018 "3.8745308816432953"^^xsd:float ;
+    ns1:title_2018 "Cytotoxicity" ;
+    ns1:worksCount_2018 30 ;
+    ns1:x_2018 "1.4267841279506683"^^xsd:float ;
+    ns1:y_2018 "2.447746753692627"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept96 a ns1:Concept ;
+    ns1:distance_2018 "3.8930486142635345"^^xsd:float ;
+    ns1:title_2018 "Antibiotics" ;
+    ns1:worksCount_2018 11 ;
+    ns1:x_2018 "0.9049213826656342"^^xsd:float ;
+    ns1:y_2018 "-2.9881272315979004"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept97 a ns1:Concept ;
+    ns1:distance_2018 "3.949847549200058"^^xsd:float ;
+    ns1:title_2018 "Natural language processing" ;
+    ns1:worksCount_2018 2 ;
+    ns1:x_2018 "0.7384761273860931"^^xsd:float ;
+    ns1:y_2018 "3.211371421813965"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept98 a ns1:Concept ;
+    ns1:distance_2018 "3.9920944273471832"^^xsd:float ;
+    ns1:title_2018 "Cancer imaging" ;
+    ns1:worksCount_2018 93 ;
+    ns1:x_2018 "-1.426540046930313"^^xsd:float ;
+    ns1:y_2018 "2.56555438041687"^^xsd:float ;
+    ns1:year_2018 2018 .
+
+ns1:concept99 a ns1:Concept ;
+    ns1:distance_2018 "4.036364048719406"^^xsd:float ;
+    ns1:title_2018 "Operating system" ;
+    ns1:worksCount_2018 25 ;
+    ns1:x_2018 "-3.2385319769382477"^^xsd:float ;
+    ns1:y_2018 "-0.7978320717811584"^^xsd:float ;
+    ns1:year_2018 2018 .
+

@@ -1,0 +1,865 @@
+<style>
+  body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#application {
+    width: 200%;
+}
+.semantic-form{
+  width: 50%
+}
+.semantic-chart{
+  width: 100%;
+  hight: 100%;
+  padding: 10px;
+}
+
+#1{float:left}
+
+.page {
+  padding-top: 44px;
+  margin-left: 32px !important;
+  margin-right: 32px !important;
+}
+.header {
+  background-color: inital;
+  border-bottom: 1px solid #F3F1EE;
+  //border-bottom: 1px solid white;
+
+}
+.title {
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 4.6rem;
+  color: var(--soa-color-brown-darker);
+}
+.subTitle {
+    font-weight: 700;
+    font-size: 2.2rem;
+    padding-left: 7rem;
+    color: #827655;
+    display: block
+}
+.institution {
+    width: 100%;
+    padding-top:10px
+}
+.row_cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2fr 2fr;
+  height: auto;
+  min-height: 240px;
+  padding-top: 1.7rem
+}
+.row_cards2 {
+  display: grid;
+  gap: 1rem;
+  padding-top: 1.7rem;
+  grid-template-columns: 4fr;
+  height: auto;
+  min-height: 240px;
+}
+.card_embeddings_concept {
+    //display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+
+    background: #F3F1EE;
+    border-radius: 0.5rem;
+    padding: 1.7rem;
+    font-size: 1.5rem;
+    color: #205BAC;
+    border: none;
+}
+.card_embeddings_publication {
+    //display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+
+    background: #F3F1EE;
+    border-radius: 0.5rem;
+    padding: 1.7rem;
+    font-size: 1.5rem;
+    color: #205BAC;
+    border: none;
+}
+.card_concepts {
+    //display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+
+    background: #F3F1EE;
+    border-radius: 0.5rem;
+    padding: 1.7rem;
+    font-size: 1.5rem;
+    color: #205BAC;
+    border: none;
+}
+.chart {
+  postion: relative;
+  flex: 1 1 0;
+  overflow: hidden;
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    line-height: normal;
+    z-index: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    user-select: none;
+    touch-action: manipulation;
+    outline: none;
+}
+
+.custom-style-series .highcharts-point {
+  stroke: black;
+}
+.custom-style-series .highcharts-graph {
+   stroke: black;
+}
+#chart1 {
+  margin-top: 45px
+}
+
+</style>
+
+
+
+<Center>
+  <div class="page">
+    <div class="header">
+      <div class="header_title">
+        <span class="title">Semantic Embeddings</span>
+        <div style="display: flex; justify-content:space-between">
+          <div class="institution"></div>
+        </div>
+      </div>
+    </div>
+    <div class="body" style='height: 100%'>
+      <div class= "row_cards">
+        <div class="card_embeddings_concept">
+          <div class="subTitle">Embeddings of Concepts related to Cancer</div>
+          <div class="chart" id="chart1">
+            <bs-tabs unmount-on-exit=true id='placeholder'>
+              <bs-tab event-key='1' title='Top 100'>
+                <Center>
+                  <semantic-chart provider='highcharts' type="bubble"  query="
+                    PREFIX ns1: <http://example.com/>
+                    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                    SELECT ?title ?x ?y ?count ?distance WHERE{
+                      ?subject ns1:title ?title.
+                      ?subject ns1:x ?x.
+                      ?subject ns1:y ?y.
+                      ?subject ns1:worksCount ?count.
+                      ?subject ns1:distance ?distance.
+                    }ORDERBY (?distance) LIMIT 100
+                    " sets='[{"dataSetName": "Concept", "category": "title", "x": "x", "y": "y", "z": "count"}]'
+
+                    style-highcharts='{
+                      "yAxis": {
+                        "title": {
+                            "text": "Y-Coordinate"
+                        }
+                      },
+                      "xAxis": {
+                        "title": {
+                            "text": "X-Coordinate"
+                        }
+                      },
+                          "series": [{"className": "custom-style-series"}],
+                          "plotOptions": {
+                            "series": {
+                              "colorByPoint": true,
+                              "marker": {
+                                "radius": 12
+                              }
+                            }
+                          },
+                          "legend": {"enabled": false},
+                        "chart": {
+                            "zoomType": "xy",
+                            "zoomBySingleTouch": true,
+                            "panKey": "shift",
+                            "panning": {
+                              "enabled": true,
+                              "type": "xy"
+                            }
+                        }
+                    }'
+                    tooltip-template='{{> tooltip}}'>
+                    <template id="tooltip">
+                      {{#each points}}
+                      <div><h3>{{bindings.title.value}}</h3></div>
+                      <div>X: <span class="pointValue">{{bindings.x.value}}</span></div>
+                      <div>Y: <span class="pointValue">{{bindings.y.value}}</span></div>
+                      <div>Works Count: <span class="pointValue">{{bindings.count.value}}</span></div>
+                      {{/each}}
+                    </template>
+                  </semantic-chart>
+                  </Center>
+
+                  <b style='color:#2e2e2e'>Explanation:</b>
+                  <ul style='color:#2e2e2e'>
+                    <li>This Chart shows Concepts related to Cancer in a sematic space</li>
+                    <li>Below the Chart are all Points listed in a table</li>
+                    <li>Bubble-size: Number of Publications related to Cancer</li>
+                  </ul>
+                  <Center>
+                  <semantic-table query='
+                    PREFIX ns1: <http://example.com/>
+                    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                    SELECT ?title ?x ?y ?count ?distance WHERE{
+                      ?subject ns1:title ?title.
+                      ?subject ns1:x ?x.
+                      ?subject ns1:y ?y.
+                      ?subject ns1:worksCount ?count.
+                      ?subject ns1:distance ?distance.
+                      }ORDERBY (?distance) LIMIT 100
+                  ' column-configuration='[
+                    {"variableName": "title", "displayName": "Concept"},
+                    {"variableName": "x", "displayName": "X-Coordinate"},
+                    {"variableName": "y", "displayName": "Y-Coordinate"},
+                    {"variableName": "count", "displayName": "Works Count"}
+                  ]'
+                  >
+                  </semantic-table>
+                </Center>
+              </bs-tab>
+              <bs-tab event-key='2' title='All'>
+                <Center>
+                  <semantic-chart provider='highcharts' type="bubble"  query="
+                    PREFIX ns1: <http://example.com/>
+                    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                    SELECT ?title ?x ?y ?count WHERE{
+                      ?subject ns1:title ?title.
+                      ?subject ns1:x ?x.
+                      ?subject ns1:y ?y.
+                      ?subject ns1:worksCount ?count.
+                      ?subject ns1:distance ?distance.
+                    }
+                    " sets='[{"dataSetName": "Concept", "category": "title", "x": "x", "y": "y", "z": "count"}]'
+
+                    style-highcharts='{
+                      "yAxis": {
+                        "title": {
+                            "text": "Y-Coordinate"
+                        }
+                      },
+                      "xAxis": {
+                        "title": {
+                            "text": "X-Coordinate"
+                        }
+                      },
+                          "series": [{"className": "custom-style-series"}],
+                          "plotOptions": {
+                            "series": {
+                              "colorByPoint": true,
+                              "marker": {
+                                "radius": 12
+                              }
+                            }
+                          },
+                          "legend": {"enabled": false},
+                        "chart": {
+                            "zoomType": "xy",
+                            "zoomBySingleTouch": true,
+                            "panKey": "shift",
+                            "panning": {
+                              "enabled": true,
+                              "type": "xy"
+                            }
+                        }
+                    }'
+                    tooltip-template='{{> tooltip}}'>
+                    <template id="tooltip">
+                      {{#each points}}
+                      <div><h3>{{bindings.title.value}}</h3></div>
+                      <div>X: <span class="pointValue">{{bindings.x.value}}</span></div>
+                      <div>Y: <span class="pointValue">{{bindings.y.value}}</span></div>
+                      <div>Works Count: <span class="pointValue">{{bindings.count.value}}</span></div>
+                      {{/each}}
+                    </template>
+                  </semantic-chart>
+                  </Center>
+
+                  <b style='color:#2e2e2e'>Explanation:</b>
+                  <ul style='color:#2e2e2e'>
+                    <li>This Chart shows Concepts related to Cancer in a sematic space</li>
+                    <li>Below the Chart are all Points listed in a table</li>
+                    <li>Bubble-size: Number of Publications related to Cancer</li>
+                  </ul>
+                  <Center>
+                  <semantic-table query='
+                    PREFIX ns1: <http://example.com/>
+                    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                    SELECT ?title ?x ?y ?count WHERE{
+                      ?subject ns1:title ?title.
+                      ?subject ns1:x ?x.
+                      ?subject ns1:y ?y.
+                      ?subject ns1:worksCount ?count.
+                      ?subject ns1:distance ?distance.
+                      }ORDERBY (?distance)
+                  ' column-configuration='[
+                    {"variableName": "title", "displayName": "Concept"},
+                    {"variableName": "x", "displayName": "X-Coordinate"},
+                    {"variableName": "y", "displayName": "Y-Coordinate"},
+                    {"variableName": "count", "displayName": "Works Count"}
+                  ]'
+                  >
+                  </semantic-table>
+                </Center>
+              </bs-tab>
+            </bs-tabs>
+          </div>
+        </div>
+        <div class="card_embeddings_publication">
+          <div class="subTitle">Embeddings of Concepts (Publications are related to Cancer Therapy)</div>
+          <div class="chart">
+            <bs-tabs unmount-on-exit=true id='search-results' >
+              <bs-tab event-key='1' title='2022'>
+                <Center>
+                <semantic-chart provider='highcharts' type="bubble"  query="
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2022 ?title.
+                    ?subject ns1:x_2022 ?x.
+                    ?subject ns1:y_2022 ?y.
+                    ?subject ns1:distance_2022 ?distance.
+                    ?subject ns1:year_2022 2022.
+                    ?subject ns1:worksCount_2022 ?sum.
+                  }ORDERBY (?distance) LIMIT 100
+                  " sets='[{"dataSetName": "Concept", "category": "title", "x": "x", "y": "y", "z": "sum"}]'
+                  style-highcharts='{
+                  "yAxis": {
+                    "title": {
+                        "text": "Y-Coordinate"
+                    }
+                  },
+                  "xAxis": {
+                    "title": {
+                        "text": "X-Coordinate"
+                    }
+                  },
+                    "series": [{"className": "custom-style-series"}],
+                    "plotOptions": {
+                      "series": {
+                        "colorByPoint": true,
+                        "marker": {
+                          "radius": 12
+                        }
+                      }
+                    },
+                    "legend": {"enabled": false},
+                        "chart": {
+                            "zoomType": "xy",
+                            "zoomBySingleTouch": true,
+                            "panKey": "shift",
+                            "panning": {
+                              "enabled": true,
+                              "type": "xy"
+                            }
+                        }
+                }'
+                tooltip-template='{{> tooltip}}'>
+                <template id="tooltip">
+                  {{#each points}}
+                  <div><h3>{{bindings.title.value}}</h3></div>
+                  <div>X: <span class="pointValue">{{bindings.x.value}}</span></div>
+                  <div>Y: <span class="pointValue">{{bindings.y.value}}</span></div>
+                  <div>Works Count: <span class="pointValue">{{bindings.sum.value}}</span></div>
+                  {{/each}}
+                </template>
+                </semantic-chart>
+                  </Center>
+
+                  <b style='color:#2e2e2e'>Explanation:</b>
+                  <ul style='color:#2e2e2e'>
+                    <li>This Chart shows the Concepts of Publications that have the concept Cancer Therapy or are related publications of those in a sematic space</li>
+                    <li>Below the Chart are all Points listed in a table</li>
+                    <li>Bubble-size: Number of Publications related to Cancer</li>
+                  </ul>
+                  <Center>
+                <semantic-table query='
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2022 ?title.
+                    ?subject ns1:x_2022 ?x.
+                    ?subject ns1:y_2022 ?y.
+                    ?subject ns1:distance_2022 ?distance.
+                    ?subject ns1:year_2022 2022.
+                    ?subject ns1:worksCount_2022 ?sum.
+                  }ORDERBY (?distance)
+                ' column-configuration='[
+                  {"variableName": "title", "displayName": "Concept"},
+                  {"variableName": "x", "displayName": "X-Coordinate"},
+                  {"variableName": "y", "displayName": "Y-Coordinate"},
+                  {"variableName": "sum", "displayName": "Works Count"}
+                ]'
+                >
+                </semantic-table>
+                </Center>
+              </bs-tab>
+              <bs-tab event-key='2' title='2021'>
+                <Center>
+                <semantic-chart provider='highcharts' type="bubble"  query="
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2021 ?title.
+                    ?subject ns1:x_2021 ?x.
+                    ?subject ns1:y_2021 ?y.
+                    ?subject ns1:distance_2021 ?distance.
+                    ?subject ns1:year_2021 2021.
+                    ?subject ns1:worksCount_2021 ?sum.
+                  }ORDERBY (?distance) LIMIT 100
+                  " sets='[{"dataSetName": "Concept", "category": "title", "x": "x", "y": "y", "z": "sum"}]'
+                    style-highcharts='{
+                    "yAxis": {
+                      "title": {
+                          "text": "Y-Coordinate"
+                      }
+                    },
+                    "xAxis": {
+                      "title": {
+                          "text": "X-Coordinate"
+                      }
+                    },
+                    "series": [{"className": "custom-style-series"}],
+                    "plotOptions": {
+                      "series": {
+                        "colorByPoint": true,
+                        "marker": {
+                          "radius": 12
+                        }
+                      }
+                    },
+                    "legend": {"enabled": false},
+                        "chart": {
+                            "zoomType": "xy",
+                            "zoomBySingleTouch": true,
+                            "panKey": "shift",
+                            "panning": {
+                              "enabled": true,
+                              "type": "xy"
+                            }
+                        }
+                  }'
+                  tooltip-template='{{> tooltip}}'>
+                  <template id="tooltip">
+                    {{#each points}}
+                    <div><h3>{{bindings.title.value}}</h3></div>
+                    <div>X: <span class="pointValue">{{bindings.x.value}}</span></div>
+                    <div>Y: <span class="pointValue">{{bindings.y.value}}</span></div>
+                    <div>Works Count: <span class="pointValue">{{bindings.sum.value}}</span></div>
+                    {{/each}}
+                  </template>
+                </semantic-chart>
+                  </Center>
+
+                  <b style='color:#2e2e2e'>Explanation:</b>
+                  <ul style='color:#2e2e2e'>
+                    <li>This Chart shows the Concepts of Publications that have the concept Cancer Therapy or are related publications of those in a sematic space</li>
+                    <li>Below the Chart are all Points listed in a table</li>
+                    <li>Bubble-size: Number of Publications related to Cancer</li>
+                  </ul>
+                  <Center>
+                <semantic-table query='
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?sum ?distance WHERE{
+                    ?subject ns1:title_2021 ?title.
+                    ?subject ns1:x_2021 ?x.
+                    ?subject ns1:y_2021 ?y.
+                    ?subject ns1:year_2021 2021.
+                    ?subject ns1:worksCount_2021 ?sum.
+                    ?subject ns1:distance_2021 ?distance.
+                    }ORDERBY (?distance)
+                ' column-configuration='[
+                  {"variableName": "title", "displayName": "Concept"},
+                  {"variableName": "x", "displayName": "X-Coordinate"},
+                  {"variableName": "y", "displayName": "Y-Coordinate"},
+                  {"variableName": "sum", "displayName": "Works Count"}
+                ]'
+                >
+                </semantic-table>
+                </Center>
+              </bs-tab>
+              <bs-tab event-key='3' title='2020'>
+                <Center>
+                <semantic-chart provider='highcharts' type="bubble"  query="
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2020 ?title.
+                    ?subject ns1:x_2020 ?x.
+                    ?subject ns1:y_2020 ?y.
+                    ?subject ns1:distance_2020 ?distance.
+                    ?subject ns1:year_2020 2020.
+                    ?subject ns1:worksCount_2020 ?sum.
+                  }ORDERBY (?distance) LIMIT 100
+                  " sets='[{"dataSetName": "Concept", "category": "title", "x": "x", "y": "y", "z": "sum"}]'
+                    style-highcharts='{
+                    "yAxis": {
+                      "title": {
+                          "text": "Y-Coordinate"
+                      }
+                    },
+                    "xAxis": {
+                      "title": {
+                          "text": "X-Coordinate"
+                      }
+                    },
+                    "series": [{"className": "custom-style-series"}],
+                    "plotOptions": {
+                      "series": {
+                        "colorByPoint": true,
+                        "marker": {
+                          "radius": 12
+                        }
+                      }
+                    },
+                    "legend": {"enabled": false},
+                        "chart": {
+                            "zoomType": "xy",
+                            "zoomBySingleTouch": true,
+                            "panKey": "shift",
+                            "panning": {
+                              "enabled": true,
+                              "type": "xy"
+                            }
+                        }
+                  }'
+                  tooltip-template='{{> tooltip}}'>
+                  <template id="tooltip">
+                    {{#each points}}
+                    <div><h3>{{bindings.title.value}}</h3></div>
+                    <div>X: <span class="pointValue">{{bindings.x.value}}</span></div>
+                    <div>Y: <span class="pointValue">{{bindings.y.value}}</span></div>
+                    <div>Works Count: <span class="pointValue">{{bindings.sum.value}}</span></div>
+                    {{/each}}
+                  </template>
+                </semantic-chart>
+                  </Center>
+
+                  <b style='color:#2e2e2e'>Explanation:</b>
+                  <ul style='color:#2e2e2e'>
+                    <li>This Chart shows the Concepts of Publications that have the concept Cancer Therapy or are related publications of those in a sematic space</li>
+                    <li>Below the Chart are all Points listed in a table</li>
+                    <li>Bubble-size: Number of Publications related to Cancer</li>
+                  </ul>
+                  <Center>
+                <semantic-table query='
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2020 ?title.
+                    ?subject ns1:x_2020 ?x.
+                    ?subject ns1:y_2020 ?y.
+                    ?subject ns1:distance_2020 ?distance.
+                    ?subject ns1:year_2020 2020.
+                    ?subject ns1:worksCount_2020 ?sum.
+                  }ORDERBY (?distance)
+                ' column-configuration='[
+                  {"variableName": "title", "displayName": "Concept"},
+                  {"variableName": "x", "displayName": "X-Coordinate"},
+                  {"variableName": "y", "displayName": "Y-Coordinate"},
+                  {"variableName": "sum", "displayName": "Works Count"}
+                ]'
+                >
+                </semantic-table>
+                </Center>
+              </bs-tab>
+              <bs-tab event-key='4' title='2019'>
+                <Center>
+                <semantic-chart provider='highcharts' type="bubble"  query="
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2019 ?title.
+                    ?subject ns1:x_2019 ?x.
+                    ?subject ns1:y_2019 ?y.
+                    ?subject ns1:distance_2019 ?distance.
+                    ?subject ns1:year_2019 2019.
+                    ?subject ns1:worksCount_2019 ?sum.
+                  }ORDERBY (?distance) LIMIT 100
+                  " sets='[{"dataSetName": "Concept", "category": "title", "x": "x", "y": "y", "z": "sum"}]'
+                    style-highcharts='{
+                    "yAxis": {
+                      "title": {
+                          "text": "Y-Coordinate"
+                      }
+                    },
+                    "xAxis": {
+                      "title": {
+                          "text": "X-Coordinate"
+                      }
+                    },
+                    "series": [{"className": "custom-style-series"}],
+                    "plotOptions": {
+                      "series": {
+                        "colorByPoint": true,
+                        "marker": {
+                          "radius": 12
+                        }
+                      }
+                    },
+                    "legend": {"enabled": false},
+                        "chart": {
+                            "zoomType": "xy",
+                            "zoomBySingleTouch": true,
+                            "panKey": "shift",
+                            "panning": {
+                              "enabled": true,
+                              "type": "xy"
+                            }
+                        }
+                  }'
+                  tooltip-template='{{> tooltip}}'>
+                  <template id="tooltip">
+                    {{#each points}}
+                    <div><h3>{{bindings.title.value}}</h3></div>
+                    <div>X: <span class="pointValue">{{bindings.x.value}}</span></div>
+                    <div>Y: <span class="pointValue">{{bindings.y.value}}</span></div>
+                    <div>Works Count: <span class="pointValue">{{bindings.sum.value}}</span></div>
+                    {{/each}}
+                  </template>
+                </semantic-chart>
+                  </Center>
+
+                  <b style='color:#2e2e2e'>Explanation:</b>
+                  <ul style='color:#2e2e2e'>
+                    <li>This Chart shows the Concepts of Publications that have the concept Cancer Therapy or are related publications of those in a sematic space</li>
+                    <li>Below the Chart are all Points listed in a table</li>
+                    <li>Bubble-size: Number of Publications related to Cancer</li>
+                  </ul>
+                  <Center>
+                <semantic-table query='
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2019 ?title.
+                    ?subject ns1:x_2019 ?x.
+                    ?subject ns1:y_2019 ?y.
+                    ?subject ns1:distance_2019 ?distance.
+                    ?subject ns1:year_2019 2019.
+                    ?subject ns1:worksCount_2019 ?sum.
+                  }ORDERBY (?distance)
+                ' column-configuration='[
+                  {"variableName": "title", "displayName": "Concept"},
+                  {"variableName": "x", "displayName": "X-Coordinate"},
+                  {"variableName": "y", "displayName": "Y-Coordinate"},
+                  {"variableName": "sum", "displayName": "Works Count"}
+                ]'
+                >
+                </semantic-table>
+                </Center>
+              </bs-tab>
+              <bs-tab event-key='5' title='2018'>
+                <Center>
+                <semantic-chart provider='highcharts' type="bubble"  query="
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2018 ?title.
+                    ?subject ns1:x_2018 ?x.
+                    ?subject ns1:y_2018 ?y.
+                    ?subject ns1:distance_2018 ?distance.
+                    ?subject ns1:year_2018 2018.
+                    ?subject ns1:worksCount_2018 ?sum.
+                  }ORDERBY (?distance) LIMIT 100
+                  " sets='[{"dataSetName": "Concept", "category": "title", "x": "x", "y": "y", "z": "sum"}]'
+                    style-highcharts='{
+                    "yAxis": {
+                      "title": {
+                          "text": "Y-Coordinate"
+                      }
+                    },
+                    "xAxis": {
+                      "title": {
+                          "text": "X-Coordinate"
+                      }
+                    },
+                    "series": [{"className": "custom-style-series"}],
+                    "plotOptions": {
+                      "series": {
+                        "colorByPoint": true,
+                        "marker": {
+                          "radius": 12
+                        }
+                      }
+                    },
+                    "legend": {"enabled": false},
+                        "chart": {
+                            "zoomType": "xy",
+                            "zoomBySingleTouch": true,
+                            "panKey": "shift",
+                            "panning": {
+                              "enabled": true,
+                              "type": "xy"
+                            }
+                        }
+                  }'
+                  tooltip-template='{{> tooltip}}'>
+                  <template id="tooltip">
+                    {{#each points}}
+                    <div><h3>{{bindings.title.value}}</h3></div>
+                    <div>X: <span class="pointValue">{{bindings.x.value}}</span></div>
+                    <div>Y: <span class="pointValue">{{bindings.y.value}}</span></div>
+                    <div>Works Count: <span class="pointValue">{{bindings.sum.value}}</span></div>
+                    {{/each}}
+                  </template>
+                </semantic-chart>
+                  </Center>
+
+                  <b style='color:#2e2e2e'>Explanation:</b>
+                  <ul style='color:#2e2e2e'>
+                    <li>This Chart shows the Concepts of Publications that have the concept Cancer Therapy or are related publications of those in a sematic space</li>
+                    <li>Below the Chart are all Points listed in a table</li>
+                    <li>Bubble-size: Number of Publications related to Cancer</li>
+                  </ul>
+                  <Center>
+                <semantic-table query='
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2018 ?title.
+                    ?subject ns1:x_2018 ?x.
+                    ?subject ns1:y_2018 ?y.
+                    ?subject ns1:distance_2018 ?distance.
+                    ?subject ns1:year_2018 2018.
+                    ?subject ns1:worksCount_2018 ?sum.
+                  }ORDERBY (?distance)
+                ' column-configuration='[
+                  {"variableName": "title", "displayName": "Concept"},
+                  {"variableName": "x", "displayName": "X-Coordinate"},
+                  {"variableName": "y", "displayName": "Y-Coordinate"},
+                  {"variableName": "sum", "displayName": "Works Count"}
+                ]'
+                >
+                </semantic-table>
+                </Center>
+              </bs-tab>
+              <bs-tab event-key='6' title='2018 Works only'>
+
+                <Center>
+                <semantic-chart provider='highcharts' type="bubble"  query="
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2018_new ?title.
+                    ?subject ns1:x_2018_new ?x.
+                    ?subject ns1:y_2018_new ?y.
+                    ?subject ns1:distance_2018_new ?distance.
+                    ?subject ns1:year_2018_new 2018.
+                    ?subject ns1:worksCount_2018_new ?sum.
+                  }ORDERBY (?distance) LIMIT 100
+                  " sets='[{"dataSetName": "Concept", "category": "title", "x": "x", "y": "y", "z": "sum"}]'
+                    style-highcharts='{
+                    "yAxis": {
+                      "title": {
+                          "text": "Y-Coordinate"
+                      }
+                    },
+                    "xAxis": {
+                      "title": {
+                          "text": "X-Coordinate"
+                      }
+                    },
+                    "series": [{"className": "custom-style-series"}],
+                    "plotOptions": {
+                      "series": {
+                        "colorByPoint": true,
+                        "marker": {
+                          "radius": 12
+                        }
+                      }
+                    },
+                    "legend": {"enabled": false},
+                        "chart": {
+                            "zoomType": "xy",
+                            "zoomBySingleTouch": true,
+                            "panKey": "shift",
+                            "panning": {
+                              "enabled": true,
+                              "type": "xy"
+                            }
+                        }
+                  }'
+                  tooltip-template='{{> tooltip}}'>
+                  <template id="tooltip">
+                    {{#each points}}
+                    <div><h3>{{bindings.title.value}}</h3></div>
+                    <div>X: <span class="pointValue">{{bindings.x.value}}</span></div>
+                    <div>Y: <span class="pointValue">{{bindings.y.value}}</span></div>
+                    <div>Works Count: <span class="pointValue">{{bindings.sum.value}}</span></div>
+                    {{/each}}
+                  </template>
+                </semantic-chart>
+                  </Center>
+
+                  <b style='color:#2e2e2e'>Explanation:</b>
+                  <ul style='color:#2e2e2e'>
+                    <li>This Chart shows the Concepts of Publications that have the concept Cancer Therapy or are related publications of those in a sematic space</li>
+                    <li>Below the Chart are all Points listed in a table</li>
+                    <li>Bubble-size: Number of Publications related to Cancer</li>
+                  </ul>
+                  <Center>
+                <semantic-table query='
+                  PREFIX ns1: <http://example.com/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?title ?x ?y ?distance ?sum WHERE{
+                    ?subject ns1:title_2018_new ?title.
+                    ?subject ns1:x_2018_new ?x.
+                    ?subject ns1:y_2018_new ?y.
+                    ?subject ns1:distance_2018_new ?distance.
+                    ?subject ns1:year_2018_new 2018.
+                    ?subject ns1:worksCount_2018_new ?sum.
+                  }ORDERBY (?distance)
+                ' column-configuration='[
+                  {"variableName": "title", "displayName": "Concept"},
+                  {"variableName": "x", "displayName": "X-Coordinate"},
+                  {"variableName": "y", "displayName": "Y-Coordinate"},
+                  {"variableName": "sum", "displayName": "Works Count"}
+                ]'
+                >
+                </semantic-table>
+                </Center>
+              </bs-tab>
+            </bs-tabs>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</Center>
