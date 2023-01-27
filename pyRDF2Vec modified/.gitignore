@@ -1,0 +1,15 @@
+*.pyc
+
+.coverage
+.tox
+_build
+coverage.xml
+env
+venv
+
+*.egg-info/
+*.mypy_cache/
+__pycache__/
+build/
+data/
+dist/

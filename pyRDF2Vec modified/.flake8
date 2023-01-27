@@ -1,0 +1,6 @@
+[flake8]
+extend-ignore =
+    # Whitespace before ':' is not PEP8 compliant (& conflicts with black)
+    E203,
+exclude = .eggs, .git, .tox, __pycache__, _build
+max-complexity = 12

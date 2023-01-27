@@ -1,0 +1,200 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.poetry]
+name = "pyrdf2vec"
+version = "0.2.3"
+description = "Python implementation and extension of RDF2Vec"
+license = "Ghent University and IMEC vzw"
+authors = [
+    "Gilles Vandewiele <gilles.vandewiele@ugent.be>",
+    "Bram Steenwinckel <bram.steenwinckel@ugent.be>",
+    "Terencio Agozzino <terencio.agozzino@gmail.com>",
+    "Michael Weyns <michael.weyns@ugent.be>",
+]
+maintainers = ["Gilles Vandewiele <gilles.vandewiele@ugent.be>"]
+readme = "README.rst"
+repository = "https://github.com/IBCNServices/pyRDF2Vec"
+documentation = "https://pyrdf2vec.readthedocs.io/en/latest/"
+keywords = ["embeddings", "knowledge-graph", "rdf2vec", "word2vec"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Build Tools"
+]
+include = [
+    "LICENSE",
+    "README.rst",
+    "CONTRIBUTORS.rst",
+    "CODE_OF_CONDUCT.rst",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+attrs = ">=21.2,<23.0"
+cachetools = "^5.0.0"
+gensim = "^4.0.1"
+matplotlib = "^3.4.2"
+networkx = "^2.8"
+nest_asyncio = "^1.5.4"
+nest-asyncio = "^1.5.1"
+numpy = "^1.22.3"
+pandas = "^1.4.2"
+python-Levenshtein = "^0.12.2"
+python-louvain = "^0.16"
+rdflib = "^6.1.1"
+scikit-learn = "^1.0.2"
+torch = "^1.8.1"
+tqdm = "^4.61.0"
+aiohttp = "^3.8.1"
+toml = "^0.10.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.8.0"
+codecov = "^2.1.9"
+doc8 = "^0.11.2"
+flake8 = "^5.0.4"
+flask = "^2.2.0"
+isort = "^5.4.2"
+mypy = "^0.961"
+pre-commit = "^2.20.0"
+pytest = "^7.0.2"
+pytest-cov = "^3.0.0"
+sphinx = "^5.1.1"
+sphinx-autodoc-typehints = "^1.19.2"
+sphinx-rtd-theme = "^1.0.0"
+sphinxcontrib-apidoc = "^0.3.0"
+towncrier = "^22.8.0"
+tox = "^3.25.1"
+yamllint = "^1.27.1"
+
+[tool.poetry.extras]
+docs = [
+    "gensim",
+    "rdflib",
+    "scikit-learn",
+    "sphinx",
+    "sphinx-autodoc-typehints",
+    "sphinx-rtd-theme",
+    "sphinxcontrib-apidoc",
+    "toml"
+]
+lint = ["black", "doc8", "flake8", "isort", "mypy", "yamllint"]
+tests = [
+    "aiohttp",
+    "codecov",
+    "gensim",
+    "nest-asyncio",
+    "numpy",
+    "pandas",
+    "pytest",
+    "pytest-cov",
+    "rdflib",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/IBCNServices/pyRDF2Vec/issues"
+
+[tool.black]
+line-length = 79
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.tox
+  | _build
+  | build
+  | dist
+  | env
+)/
+'''
+
+[tool.towncrier]
+package = "pyrdf2vec"
+filename = "CHANGELOG.rst"
+template = "changelog.d/_template.rst"
+issue_format = "`#{issue} <https://github.com/IBCNServices/pyRDF2Vec/issues/{issue}>`_"
+directory = "changelog.d"
+title_format = "{version} ({project_date})"
+underlines = ["-", "^"]
+
+    [[tool.towncrier.type]]
+    directory = "bugfix"
+    name = "Bug Fixes"
+    showcontent = true
+
+    [[tool.towncrier.type]]
+    directory = "feature"
+    name = "Features"
+    showcontent = true
+
+    [[tool.towncrier.type]]
+    directory = "doc"
+    name = "Improved Documentation"
+    showcontent = true
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist =
+    docs
+    py{37,38,39}
+    lint
+    tests
+isolated_build = True
+
+[testenv:changelog]
+description = Displays the news fragments of the CHANGELOG file
+deps = towncrier
+skip_install = true
+commands = towncrier --draft
+
+[testenv:docs]
+description = Builds documentation (HTML) with Sphinx.
+deps =
+    gensim
+    rdflib
+    scikit-learn
+    sphinx
+    sphinx-autodoc-typehints
+    sphinx-rtd-theme
+    sphinxcontrib-apidoc
+    toml
+commands =
+    sphinx-build -n -T docs docs/_build/html
+    python -m doctest README.rst
+
+[testenv:lint]
+description = Checks the code style.
+deps = pre-commit
+skip_install = true
+commands = pre-commit run --all-files
+
+[testenv:tests]
+description = Runs unit tests and performs coverage.
+deps =
+    aiohttp
+    codecov
+    gensim
+    nest-asyncio
+    numpy
+    pandas
+    pytest
+    pytest-cov
+    pytest-xdist
+    rdflib
+    scikit-learn
+commands = pytest --cov=pyrdf2vec --cov-report=xml tests
+"""

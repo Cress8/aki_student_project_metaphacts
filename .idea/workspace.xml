@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="80eb37ae-5696-4274-8ce8-b05f4a7d7f6a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flake8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/documentation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/feature.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/question.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/dependabot.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mypy.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pre-commit-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.readthedocs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yamllint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE_OF_CONDUCT.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/architecture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/embeddings.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/header.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imec-idlab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changelog.d/_template.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/modules.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.connectors.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.embedders.doc2vec.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.embedders.embedder.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.embedders.fasttext.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.embedders.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.embedders.word2vec.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.graphs.kg.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.graphs.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.graphs.vertex.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.rdf2vec.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.samplers.frequency.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.samplers.pagerank.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.samplers.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.samplers.sampler.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.samplers.uniform.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.samplers.wide.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.typings.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.utils.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.utils.validation.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.walkers.anonymous.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.walkers.community.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.walkers.halk.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.walkers.ngram.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.walkers.random.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.walkers.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.walkers.split.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.walkers.walker.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.walkers.walklet.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api/pyrdf2vec.walkers.weisfeiler_lehman.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/code_of_conduct.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/contributing.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/glossary.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/license.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/posts-papers.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/readme.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/countries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/literals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/mutag.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/online-learning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/samplers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/connectors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/embedders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/embedders/embedder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/embedders/fasttext.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/embedders/word2vec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/graphs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/graphs/kg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/graphs/vertex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/rdf2vec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/samplers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/samplers/frequency.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/samplers/pagerank.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/samplers/sampler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/samplers/uniform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/samplers/wide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/typings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/utils/validation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/walkers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/walkers/anonymous.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/walkers/community.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/walkers/halk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/walkers/ngram.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/walkers/random.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/walkers/split.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/walkers/walker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/walkers/walklet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrdf2vec/walkers/weisfeiler_lehman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/countries-cities/entities.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/mutag/mutag.owl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/mutag/online-training.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/mutag/test.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/mutag/train.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/embedders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/embedders/test_word2vec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/samplers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/samplers/test_frequency.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/samplers/test_pagerank.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/samplers/test_sampler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/samplers/test_uniform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/samplers/test_wide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_connectors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_graph.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_rdf2vec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_walkers_samplers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/walkers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/walkers/test_anonymous.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/walkers/test_community.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/walkers/test_halk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/walkers/test_ngram.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/walkers/test_random.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/walkers/test_walklet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/walkers/test_weisfeiler_lehman.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2Ku1qwfbZsOBBSEtAz1fqymjEos" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80eb37ae-5696-4274-8ce8-b05f4a7d7f6a" name="Changes" comment="" />
+      <created>1674809847557</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674809847557</updated>
+      <workItem from="1674809848729" duration="46000" />
+      <workItem from="1674809927542" duration="335000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
