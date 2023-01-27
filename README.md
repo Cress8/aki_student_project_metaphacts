@@ -1,6 +1,13 @@
 # Applied AI Student Project with metaphacts
 ## Folder description
 ### Embeddings for Concepts only
+<p> In this folder are: </p>
+<ol>
+  <li> Samples (The CSV files for the entities and also the number of publications)</li>
+  <li> Outcomes (The Turtle file with the embeddings)</li>
+  <li> Jupyter-Notebook (Created code for the calculation of the embeddings and for the preparation of the visualisation)</li>
+</ol>
+
 ### Embeddings for Publications & related Publications
 <p> In this folder are: </p>
 <ol>
@@ -10,6 +17,13 @@
 </ol>
 
 ### Embeddings for Publications only
+<p> In this folder are: </p>
+<ol>
+  <li> Samples (The CSV files for the entities and also the number of publications)</li>
+  <li> Outcomes (The Turtle file with the embeddings)</li>
+  <li> Jupyter-Notebook (Created code for the calculation of the embeddings and for the preparation of the visualisation)</li>
+</ol>
+
 ### Visualization
 ### pyRDF2Vec modified
 
