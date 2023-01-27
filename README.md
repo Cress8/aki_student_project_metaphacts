@@ -25,6 +25,8 @@
 </ol>
 
 ### Visualization
+<p>In this folder an html file is stored that contains the template of the visualisation in the metaphactory</p>
+
 ### pyRDF2Vec modified
 
 <p>For the calculation of the embeddings we used pyRDF2Vec. <br>
