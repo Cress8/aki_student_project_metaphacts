@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80eb37ae-5696-4274-8ce8-b05f4a7d7f6a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/aki_student_project_metaphacts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aki_student_project_metaphacts.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Embeddings for Concepts only/Outcomes/embeddings_conceptsOnly.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/Embeddings for Concepts only/Outcomes/embeddings_conceptsOnly.ttl" afterDir="false" />
-    </list>
+    <list default="true" id="80eb37ae-5696-4274-8ce8-b05f4a7d7f6a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +81,7 @@
       <workItem from="1675006882229" duration="9000" />
       <workItem from="1675068284283" duration="15000" />
       <workItem from="1675068309534" duration="3000" />
-      <workItem from="1675085058580" duration="2909000" />
+      <workItem from="1675085058580" duration="3225000" />
     </task>
     <task id="LOCAL-00001" summary="saved pyrdf2vec bib in folder">
       <created>1674810305534</created>
@@ -129,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674814269538</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Jupyter-Notebook">
+      <created>1675089093526</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675089093526</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
