@@ -1,0 +1,11 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sp: <https://semopenalex.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?work WHERE {
+  
+  #All Works of Cancer Therapy
+  ?work sp:hasConcept <https://semopenalex.org/concept/C2983331546>.
+  ?work <http://purl.org/spar/fabio/hasPublicationYear> "2018"^^xsd:integer.
+} 
