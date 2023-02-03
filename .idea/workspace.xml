@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80eb37ae-5696-4274-8ce8-b05f4a7d7f6a" name="Changes" comment="" />
+    <list default="true" id="80eb37ae-5696-4274-8ce8-b05f4a7d7f6a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embeddings for Concepts only/embeddingsConceptonly.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Embeddings for Concepts only/embeddingsConceptonly.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embeddings for Publications &amp; related Publications/Embeddings for Cancer Therapy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Embeddings for Publications &amp; related Publications/Embeddings for Cancer Therapy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embeddings for Publications only/Embeddings for Cancer Therapy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Embeddings for Publications only/Embeddings for Cancer Therapy.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +87,9 @@
       <workItem from="1675068284283" duration="15000" />
       <workItem from="1675068309534" duration="3000" />
       <workItem from="1675085058580" duration="3225000" />
+      <workItem from="1675089226779" duration="159000" />
+      <workItem from="1675427437639" duration="10000" />
+      <workItem from="1675429333500" duration="827000" />
     </task>
     <task id="LOCAL-00001" summary="saved pyrdf2vec bib in folder">
       <created>1674810305534</created>
@@ -132,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675089093526</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Outcomes">
+      <created>1675089278146</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675089278146</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Outcomes">
+      <created>1675089344788</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675089344788</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +164,8 @@
     <MESSAGE value="saved pyrdf2vec bib in folder" />
     <MESSAGE value="new folder-structure" />
     <MESSAGE value="Jupyter-Notebook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jupyter-Notebook" />
+    <MESSAGE value="Outcomes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Outcomes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/aki_student_project_metaphacts$connectors.coverage" NAME="connectors Coverage Results" MODIFIED="1675085277643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Lib/site-packages/pyrdf2vec" />
