@@ -46,3 +46,5 @@ url = f"{self.endpoint}?query={parse.quote(query)}"
 ```
 
 <p> The same in line 132 and press <b>CTRL + S </b> to save the file</p>
+
+
