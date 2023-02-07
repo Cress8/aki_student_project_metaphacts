@@ -1,0 +1,19 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sp: <https://semopenalex.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?conceptTitelWork  (count(?work) as ?countWork) WHERE {
+	#All Works of Cancer Therapy
+  	?work sp:hasConcept <https://semopenalex.org/concept/C2983331546>.
+  	?work <http://purl.org/spar/fabio/hasPublicationYear> "2018"^^xsd:integer.
+  	#All related Works of ?work
+  	?work sp:hasRelatedWork ?relatedWork.
+  	?relatedWork <http://purl.org/spar/fabio/hasPublicationYear> "2018"^^xsd:integer.
+	#Concepts of work
+	?work sp:hasConcept ?conceptWork.
+	?conceptWork skos:prefLabel ?conceptTitelWork.
+	#Concepts of relatedWork
+	?relatedWork sp:hasConcept ?conceptRelatedWork.
+	?conceptRelatedWork skos:prefLabel ?conceptTitelRelatedWork.
+}GROUP BY ?conceptTitelWork
